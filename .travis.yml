@@ -2,13 +2,23 @@ language: node_js
 node_js:
 - 10
 
+services:
+- docker
+
+sudo: required
+
 branches:
   only:
   - master
+  - gh-pages
 
-script:
+before_script:
 - ./scripts/docker_install_run.sh
 - npm install
+- sleep 20
+- docker ps -a
+
+script:
 - npm run test
 
 cache:

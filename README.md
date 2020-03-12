@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dawidkotarba/blog.svg?branch=master)](https://travis-ci.org/dawidkotarba/blog)
+
 # blog
 My personal miniblog - under construction
 
