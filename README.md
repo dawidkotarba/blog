@@ -19,12 +19,12 @@ docker run -d -p 4000:4000 --name blog -v "$PWD":/srv/jekyll blog
 ```
 
 ### Run:
-```
+```bash
 docker start blog
 docker stop blog
 ```
 or
-```
+```bash
 docker restart blog
 ```
 Page will be available at http://localhost:4000/
