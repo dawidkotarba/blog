@@ -12,9 +12,11 @@ branches:
   - master
   - gh-pages
 
-before_script:
-- ./scripts/docker_install_run.sh
+install:
 - npm install
+- ./scripts/docker_install_run.sh
+
+before_script:
 - sleep 20
 - docker ps -a
 
