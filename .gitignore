@@ -5,8 +5,16 @@
 _site
 .sass-cache
 .vagrant
+*.log
+node_modules
 
 # general
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# cypress
+cypress/integration/examples
+cypress/fixtures/example.json
+cypress/videos
+cypress/screenshot

@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "My mini-blog",
+  "main": "index.html",
+  "scripts": {
+    "test": "sudo ./scripts/start.sh; cypress run --headless --browser firefox",
+    "cypress": "sudo ./scripts/start.sh; ./scripts/restart.sh && cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawidkotarba/blog.git"
+  },
+  "author": "Dawid Kotarba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawidkotarba/blog/issues"
+  },
+  "homepage": "https://github.com/dawidkotarba/blog#readme",
+  "devDependencies": {
+    "cypress": "^4.1.0"
+  }
+}

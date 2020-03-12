@@ -191,6 +191,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - node_modules
 
 # prose.io config
 prose:
@@ -206,6 +207,7 @@ prose:
     - /css
     - /img
     - /js
+    - /node_modules
   metadata:
     _posts:
       - name: "layout"
