@@ -767,12 +767,14 @@ pre {
 
 .tag-btn {
   margin: 5px;
-  background-color: grey;
+  background-color: #7a8288;
   border-color: black;
+  transition: .5s;
 }
 
 .tag-btn:hover{
   background-color: #ba0e56;
+  transform: scale(1.1);
 }
 
 #full-tags-list {
