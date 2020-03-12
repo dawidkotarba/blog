@@ -1,5 +1,5 @@
 # blog
-My personal blog - under construction
+My personal miniblog - under construction
 
 ### Credits:
 - Theme: https://github.com/daattali/beautiful-jekyll

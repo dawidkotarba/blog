@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Dawid Kotarba - my personal blog
+title: Dawid Kotarba - my personal miniblog
 
 # Short description of your site
-description: blog
+description: miniblog
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
