@@ -767,6 +767,12 @@ pre {
 
 .tag-btn {
   margin: 5px;
+  background-color: grey;
+  border-color: black;
+}
+
+.tag-btn:hover{
+  background-color: #ba0e56;
 }
 
 #full-tags-list {

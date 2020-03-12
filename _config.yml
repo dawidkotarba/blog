@@ -20,8 +20,7 @@ description: blog
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Author's home: "https://dawidkotarba.github.io/"
+  About me: "https://dawidkotarba.github.io/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -65,12 +64,12 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
+#  email: "someone@example.com"
 #  facebook: deanattali
   github: dawidkotarba
   twitter: dawidkotarba
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/dawid-kotarba-425306a5
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -85,12 +84,8 @@ social-network-links:
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-#  facebook: true
+  facebook: true
   linkedin: true
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
