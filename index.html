@@ -8,7 +8,7 @@ use-site-title: true
 
 <div class="posts-list">
   {% for post in paginator.posts %}
-  <article class="post-preview">
+  <article class="post-preview" data-aos="fade-up" data-aos-duration="1000>
     <a href="{{ post.url | relative_url }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
 

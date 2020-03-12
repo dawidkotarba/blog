@@ -3,6 +3,8 @@ common-css:
   - "/css/bootstrap.min.css"
   - "/css/bootstrap-social.css"
   - "/css/main.css"
+  - "/css/animate.min.css"
+  - "/css/aos.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -12,6 +14,8 @@ common-js:
   - "/js/jquery-1.11.2.min.js"
   - "/js/bootstrap.min.js"
   - "/js/main.js"
+  - "/js/aos.js"
+  - "/js/custom.js"
 ---
 
 <!DOCTYPE html>
@@ -20,16 +24,16 @@ common-js:
   {% include head.html %}
 
   <body>
-
+  <div class="animated fadeIn">
     {% include gtm_body.html %}
-  
+
     {% include nav.html %}
 
     {{ content }}
 
     {% include footer.html %}
-  
+
     {% include footer-scripts.html %}
-  
+  </div>
   </body>
 </html>
