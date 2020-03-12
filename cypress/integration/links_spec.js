@@ -1,7 +1,7 @@
 describe('Menu buttons tests', () => {
 
     beforeEach(() => {
-        cy.visit('http://localhost:4000')
+        cy.visit(Cypress.env('host'))
     });
 
     it('Homepage menu button should navigate to blog site', () => {

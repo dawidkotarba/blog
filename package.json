@@ -4,8 +4,9 @@
   "description": "My mini-blog",
   "main": "index.html",
   "scripts": {
-    "test": "sudo ./scripts/start.sh; cypress run --headless --browser firefox",
-    "cypress": "sudo ./scripts/start.sh; ./scripts/restart.sh && cypress open"
+    "test": "sudo ./scripts/start.sh; cypress run --headless --browser firefox --env host=http://localhost:4000",
+    "travis": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog",
+    "cypress": "sudo ./scripts/start.sh; ./scripts/restart.sh && cypress open --env host=http://localhost:4000"
   },
   "repository": {
     "type": "git",
