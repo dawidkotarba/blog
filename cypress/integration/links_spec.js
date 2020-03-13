@@ -33,4 +33,11 @@ describe('Menu buttons tests', () => {
             .should('have.prop', 'href')
             .and('equal', 'https://deanattali.com/beautiful-jekyll/')
     });
+
+    it('GitHub pages link shall point to GH page of this site', () => {
+        cy.get('body > div > footer > div > div > div > p.copyright.text-muted > a')
+            .should('have.prop', 'href')
+            .and('equal', 'https://github.com/dawidkotarba/blog')
+    });
 });
+
