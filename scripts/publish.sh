@@ -17,5 +17,6 @@ if show_yesno_box "Push to github pages?"; then
     git merge master --no-edit --strategy-option=theirs
     git push
     git checkout master
+    git push
 fi
 
