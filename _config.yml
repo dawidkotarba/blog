@@ -119,7 +119,7 @@ gtm: "GTM-P6L68NW"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "dawidkotarba-blog"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
@@ -181,7 +181,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      show-avatar: false
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
