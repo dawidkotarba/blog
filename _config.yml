@@ -97,13 +97,13 @@ footer-url-site: "https://github.com/dawidkotarba/blog"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-160607719-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-160607719-1"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-P6L68NW"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
