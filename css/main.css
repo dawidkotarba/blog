@@ -819,7 +819,7 @@ pre {
 }
 
 .img-transform {
-  filter: brightness(90%) saturate(90%);
+  filter: brightness(90%) saturate(90%) hue-rotate(10deg);
   transition: 1.5s;
 }
 
