@@ -4,16 +4,16 @@ describe('Menu buttons tests', () => {
         cy.visit(Cypress.env('host'))
     });
 
-    it('Homepage menu button should navigate to blog site', () => {
+    it('Homepage menu button should navigate to homepage site', () => {
         cy.get('#main-navbar > ul > li:nth-child(1) > a')
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io/blog')
+            .and('contains', 'https://dawidkotarba.github.io')
     });
 
-    it('About me menu button should navigate to main github page', () => {
+    it('Blog menu button should navigate to main github page', () => {
         cy.get('#main-navbar > ul > li:nth-child(2) > a')
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io')
+            .and('contains', 'https://dawidkotarba.github.io/blog')
     });
 
     it('LinkedIn menu button should navigate to LinkedIn profile', () => {

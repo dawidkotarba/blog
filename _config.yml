@@ -6,6 +6,8 @@ title: Dawid Kotarba - my personal miniblog
 # Short description of your site
 description: miniblog
 
+nav-title: Blog homepage
+
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -20,8 +22,8 @@ description: miniblog
 
 # List of links in the navigation bar
 navbar-links:
-  Homepage: "https://dawidkotarba.github.io/blog"
-  About me: "https://dawidkotarba.github.io/"
+  Homepage: "https://dawidkotarba.github.io"
+  Blog: "https://dawidkotarba.github.io/blog"
   LinkedIn: "https://www.linkedin.com/in/dawid-kotarba-425306a5"
   GitHub: "https://github.com/dawidkotarba"
 
