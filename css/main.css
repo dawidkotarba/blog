@@ -27,10 +27,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
   color: {{ site.link-col }};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 a:hover,
 a:focus {
   color: {{ site.hover-col }};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 blockquote {
   color: #808080;
@@ -120,14 +124,16 @@ img {
     letter-spacing: 1px;
     color: #222;
     font-weight: 600;
-    -webkit-transition: color .2s;
-    transition: color .2s;
+    -webkit-transition: color .7s;
+    transition: color .7s;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
     font-weight: 600;
   color: {{ site.navbar-text-col }};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -135,6 +141,8 @@ img {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: {{ site.navbar-hover-col }};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -232,6 +240,8 @@ img {
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 @media only screen and (max-width: 767px) {
   .navbar-custom .nav .navlinks-container.show-children {
@@ -258,6 +268,8 @@ img {
     padding-left: 10px;
     border: 1px solid #eaeaea;
     border-width: 0 1px 1px;
+    -webkit-transition: color .7s;
+    transition: color .7s;
   }
 }
 
@@ -281,6 +293,8 @@ footer p.text-muted {
 
 footer a {
   color: {{site.footer-link-col}};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 footer .list-inline {
@@ -329,12 +343,16 @@ footer .theme-by {
 .post-preview a {
   text-decoration: none;
   color: #404040;
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
   color: {{ site.hover-col }};
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .post-preview .post-title {
@@ -398,12 +416,16 @@ footer .theme-by {
   color: {{ site.link-col }};
   text-decoration: none;
   padding: 0px 5px;
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
   color: {{ site.hover-col }};
   background-color: #EEE;
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 .post-preview .blog-tags {
@@ -786,6 +808,8 @@ pre {
 
 #full-tags-list .tag-entry a {
   font-size: 20px;
+  -webkit-transition: color .7s;
+  transition: color .7s;
 }
 
 #full-tags-list .tag-entry .entry-date {
