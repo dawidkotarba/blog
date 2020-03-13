@@ -8,9 +8,9 @@
 	  {{ site.time | date: '%Y' }}
 	{% endif %}
 
-    {% if site.url-pretty %}
+    {% if site.footer-url-name %}
     &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-    <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
+    <a href="{{ site.footer-url-site }}">{{ site.footer-url-name }}</a>
     {% endif %}
   </div>
 </footer>
