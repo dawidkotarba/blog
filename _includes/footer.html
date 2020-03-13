@@ -28,9 +28,9 @@
       &nbsp;&bull;&nbsp;
       {{ site.time | date: '%Y' }}
 
-      {% if site.url-pretty %}
+      {% if site.footer-url-name %}
       &nbsp;&bull;&nbsp;
-      <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
+      <a href="{{ site.footer-url-site }}">{{ site.footer-url-name }}</a>
       {% endif %}
 
       {% if site.matomo %}

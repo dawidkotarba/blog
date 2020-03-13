@@ -91,6 +91,9 @@ share-links-active:
   facebook: true
   linkedin: true
 
+footer-url-name: "GitHub pages"
+footer-url-site: "https://github.com/dawidkotarba/blog"
+
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
