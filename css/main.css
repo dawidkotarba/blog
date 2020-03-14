@@ -823,7 +823,7 @@ pre {
 
 .img-transform {
   filter: brightness(90%) saturate(90%) hue-rotate(15deg);
-  transition: 1.5s;
+  transition: 3s;
 }
 
 .img-transform:hover {
