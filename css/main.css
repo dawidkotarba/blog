@@ -788,13 +788,16 @@ pre {
 
 .tag-btn {
   margin: 5px;
-  background-color: #7a8288;
-  border-color: black;
-  transition: .5s;
+  background-color: #545454;
+  border-color: #545454;
+  transition: 1s;
+  transform: scale(1);
 }
 
 .tag-btn:hover{
-  background-color: #ba0e56;
+  background-color: #878787;
+  border-color: #878787;
+  transition: 1s;
   transform: scale(1.1);
 }
 
