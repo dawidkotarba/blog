@@ -13,6 +13,7 @@ Images from Unsplash by:
 - Martin Wilner
 - Aryan Dhiman
 - Esteban Lopez
+- seth schwiet
 
 ### Build:
 ```
