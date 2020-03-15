@@ -5,7 +5,7 @@ describe('Content tests', () => {
     });
 
     it('The title should include information about the site', () => {
-        cy.title().should('include', 'blog')
+        cy.title().should('contain', 'Thoughts Repository')
     });
 
     it('Should display main image', () => {
