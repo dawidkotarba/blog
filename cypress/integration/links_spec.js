@@ -4,7 +4,7 @@ describe('Menu buttons tests', () => {
         cy.visit(Cypress.env('host'))
     });
 
-    it('Homepage menu button should navigate to homepage site', () => {
+    it('About me menu button should navigate to homepage site', () => {
         cy.get('#main-navbar > ul > li:nth-child(1) > a')
             .should('have.prop', 'href')
             .and('contains', 'https://dawidkotarba.github.io')

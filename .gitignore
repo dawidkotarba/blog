@@ -17,4 +17,4 @@ ehthumbs.db
 cypress/integration/examples
 cypress/fixtures/example.json
 cypress/videos
-cypress/screenshot
+cypress/screenshots

@@ -1,7 +1,7 @@
 describe('Mobile tests', () => {
 
     let menuButtonSlector = 'body > div > nav > div > div.navbar-header > button';
-    let homepageLinkSelector = '#main-navbar > ul > li:nth-child(1) > a';
+    let aboutMeLinkSelector = '#main-navbar > ul > li:nth-child(1) > a';
     let blogSelector = '#main-navbar > ul > li:nth-child(2) > a';
     let linkedInSelector = '#main-navbar > ul > li:nth-child(3) > a';
     let gitHubSelector = '#main-navbar > ul > li:nth-child(4) > a';
@@ -12,23 +12,23 @@ describe('Mobile tests', () => {
     });
 
     it('Menu should toggle on and off', () => {
-        cy.get(homepageLinkSelector).should('not.be.visible');
+        cy.get(aboutMeLinkSelector).should('not.be.visible');
         cy.get(blogSelector).should('not.be.visible');
         cy.get(linkedInSelector).should('not.be.visible');
         cy.get(gitHubSelector).should('not.be.visible');
 
         cy.get(menuButtonSlector).click();
 
-        cy.get(homepageLinkSelector).should('be.visible');
+        cy.get(aboutMeLinkSelector).should('be.visible');
         cy.get(blogSelector).should('be.visible');
         cy.get(linkedInSelector).should('be.visible');
         cy.get(gitHubSelector).should('be.visible');
     });
 
-    it('Homepage menu button should navigate to blog site', () => {
+    it('About me menu button should navigate to blog site', () => {
         cy.get(menuButtonSlector).click();
-        cy.get(homepageLinkSelector).should('be.visible');
-        cy.get(homepageLinkSelector)
+        cy.get(aboutMeLinkSelector).should('be.visible');
+        cy.get(aboutMeLinkSelector)
             .should('have.prop', 'href')
             .and('contains', 'https://dawidkotarba.github.io')
     });
