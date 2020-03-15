@@ -12,4 +12,7 @@ describe('Content tests', () => {
         cy.get('body > div > header > div.big-img.intro-header.img-transform').scrollIntoView().should('be.visible');
     });
 
+    it('Cookie popup shall be visible', () => {
+        cy.get('body > div.cookieconsent').should('be.visible');
+    });
 });
