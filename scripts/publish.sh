@@ -22,8 +22,8 @@ if show_yesno_box "Push to github pages?"; then
 
     git checkout gh-pages
     git merge master --no-edit --strategy-option=theirs
-    git push
+    git push --no-verify
     git checkout master
-    git push
+    git push --no-verify
 fi
 
