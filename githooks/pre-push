@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Running tests:"
-npm run test-firefox
-npm run test-chrome
+npm run test-firefox && npm run test-chrome
 
 # $? stores exit value of the last command
 if [ $? -ne 0 ]; then

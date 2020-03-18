@@ -13,6 +13,13 @@ function show_yesno_box(){
 }
 
 if show_yesno_box "Push to github pages?"; then
+    npm run test-firefox && npm run test-chrome
+
+    if [ $? -ne 0 ]; then
+        echo "Tests must pass before commit."
+        exit 1
+    fi
+
     git checkout gh-pages
     git merge master --no-edit --strategy-option=theirs
     git push
