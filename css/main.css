@@ -791,6 +791,7 @@ pre {
   background-color: #545454;
   border-color: #545454;
   transition: 1s;
+  -webkit-transition: 1s;
   transform: scale(1);
 }
 
@@ -798,6 +799,7 @@ pre {
   background-color: #878787;
   border-color: #878787;
   transition: 1s;
+  -webkit-transition: 1s;
   transform: scale(1.1);
 }
 
@@ -823,14 +825,34 @@ pre {
 
 .img-transform {
   filter: brightness(90%) saturate(90%) hue-rotate(15deg);
+  -webkit-transition: 3s;
   transition: 3s;
 }
 
 .img-transform:hover {
    filter: brightness(110%) saturate(180%) hue-rotate(-15deg);
-   transition: 1.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
  }
 
 .navbar-nav {
   margin-left: 25%;
+}
+
+.search-box {
+  width: 100%;
+  padding: 5px;
+  outline: none !important;
+  border:1px solid #808080;
+  box-shadow: none !important;
+}
+
+.search-box::placeholder {
+  padding-left: 5px;
+}
+
+.search-box:focus {
+  outline: none !important;
+  border:1px solid black;
+  box-shadow: none !important;
 }
