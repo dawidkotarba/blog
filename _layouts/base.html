@@ -55,12 +55,15 @@ common-js:
           $(resultsContainer).hide();
           if ($(this).val().length > 0) {
               setTimeout(function () {
-                  let searchInputWidth = $(searchInput).css('width');
-                  $(resultsContainer).css('max-width', searchInputWidth);
-                  $(resultsContainer).show();
-                  // needed to make it visible against main CSS
-                  $(resultsContainer).css('visibility', 'visible');
-              }, 1000);
+                  // check once again after a timeout
+                  if ($(searchInput).val().length > 0) {
+                      let searchInputWidth = $(searchInput).css('width');
+                      $(resultsContainer).css('max-width', searchInputWidth);
+                      $(resultsContainer).show();
+                      // needed to make it visible against main CSS
+                      $(resultsContainer).css('visibility', 'visible');
+                  }
+              }, 500);
           }
       });
   </script>
