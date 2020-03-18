@@ -841,10 +841,12 @@ pre {
 
 .search-box {
   width: 100%;
+  max-width: 720px;
   padding: 5px;
   outline: none !important;
   border:1px solid #808080;
   box-shadow: none !important;
+  border-radius: 10px;
 }
 
 .search-box::placeholder {
@@ -855,4 +857,16 @@ pre {
   outline: none !important;
   border:1px solid black;
   box-shadow: none !important;
+}
+
+.results-container {
+  width: 100%;
+  max-width: 720px;
+  border: 1px solid #808080;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  z-index: 9999;
+  visibility: hidden;
 }

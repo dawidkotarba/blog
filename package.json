@@ -4,8 +4,10 @@
   "description": "My mini-blog",
   "main": "index.html",
   "scripts": {
-    "test": "sudo ./scripts/start.sh; cypress run --headless --browser firefox --env host=http://localhost:4000",
-    "travis": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog",
+    "test-firefox": "sudo ./scripts/start.sh; cypress run --headless --browser firefox --env host=http://localhost:4000",
+    "test-chrome": "sudo ./scripts/start.sh; cypress run --headless --browser chrome --env host=http://localhost:4000",
+    "test-firefox-prod": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog",
+    "test-chrome-prod": "cypress run --headless --browser chrome --env host=https://dawidkotarba.github.io/blog",
     "cypress": "sudo ./scripts/start.sh; ./scripts/restart.sh && cypress open --env host=http://localhost:4000"
   },
   "repository": {
