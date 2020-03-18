@@ -36,5 +36,34 @@ common-js:
 
     {% include footer-scripts.html %}
   </div>
+
+  <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+  <script>
+      let searchInput = document.getElementById('search-input');
+      let resultsContainer = document.getElementById('results-container');
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+          searchInput: searchInput,
+          resultsContainer: resultsContainer,
+          json: '{{ site.baseurl }}/search.json',
+          searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+          noResultsText: 'No such post, yet :)',
+          limit: 10,
+          fuzzy: true
+      });
+
+      $(searchInput).on('input', function () {
+          $(resultsContainer).hide();
+          if ($(this).val().length > 0) {
+              setTimeout(function () {
+                  let searchInputWidth = $(searchInput).css('width');
+                  $(resultsContainer).css('max-width', searchInputWidth);
+                  $(resultsContainer).show();
+                  // needed to make it visible against main CSS
+                  $(resultsContainer).css('visibility', 'visible');
+              }, 1000);
+          }
+      });
+  </script>
+
   </body>
 </html>

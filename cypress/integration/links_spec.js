@@ -41,3 +41,18 @@ describe('Menu buttons tests', () => {
     });
 });
 
+describe('Input search tests', () => {
+
+    beforeEach(() => {
+        cy.visit(Cypress.env('host'))
+    });
+
+    it('It should search welcome post', () => {
+        cy.get('#search-input')
+            .type('welcome');
+
+        cy.get('#results-container')
+            .should('be.visible');
+    });
+});
+
