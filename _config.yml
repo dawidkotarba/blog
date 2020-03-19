@@ -254,3 +254,4 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - liquid_reading_time
