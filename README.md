@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/dawidkotarba/blog.svg?branch=master)](https://travis-ci.org/dawidkotarba/blog)
 [![codebeat badge](https://codebeat.co/badges/f7bad784-7732-4cd8-a27f-de09ad3f49f9)](https://codebeat.co/projects/github-com-dawidkotarba-blog-gh-pages)
 
-# blog
+# https://dawidkotarba.github.io/blog
 My personal miniblog - under construction
 
 ### Credits:

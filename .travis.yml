@@ -13,7 +13,7 @@ before_script:
 - sleep 300
 
 script:
-- npm run test-firefox-prod && npm run test-chrome-prod
+- npm run test-prod
 
 cache:
   npm: true
