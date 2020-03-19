@@ -870,10 +870,3 @@ pre {
   z-index: 9999;
   visibility: hidden;
 }
-
-.read-time {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
-  margin: 0 0 10px;
-}
