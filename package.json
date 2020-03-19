@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/dawidkotarba/blog#readme",
   "devDependencies": {
-    "cypress": "^4.1.0"
+    "cypress": "^4.2.0"
   }
 }
