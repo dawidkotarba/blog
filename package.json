@@ -4,13 +4,20 @@
   "description": "My mini-blog",
   "main": "index.html",
   "scripts": {
-    "test-firefox": "sudo ./scripts/start.sh; cypress run --headless --browser firefox --env host=http://localhost:4000",
-    "test-chrome": "sudo ./scripts/start.sh; cypress run --headless --browser chrome --env host=http://localhost:4000",
+    "jekyll": "bundle exec jekyll serve",
+    "jekyll-background": "nohup bundle exec jekyll serve > /dev/null &",
+    "jekyll-stop": "ps aux | grep 'jekyll serve' | awk '{print $2}' | xargs kill -9",
+    "test-firefox": "npm run jekyll-background; cypress run --headless --browser firefox --env host=http://localhost:4000",
+    "test-chrome": "npm run jekyll-background; cypress run --headless --browser chrome --env host=http://localhost:4000",
+    "test-firefox-docker": "sudo ./scripts/start.sh; cypress run --headless --browser firefox --env host=http://localhost:4000",
+    "test-chrome-docker": "sudo ./scripts/start.sh; cypress run --headless --browser chrome --env host=http://localhost:4000",
     "test": "npm run test-firefox && npm run test-chrome",
+    "test-docker": "npm run test-firefox-docker && npm run test-chrome-docker",
     "test-firefox-prod": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog",
     "test-chrome-prod": "cypress run --headless --browser chrome --env host=https://dawidkotarba.github.io/blog",
     "test-prod": "npm run test-firefox-prod && npm run test-chrome-prod",
-    "cypress": "sudo ./scripts/restart.sh && cypress open --env host=http://localhost:4000"
+    "cypress": "npm run jekyll-background; cypress open --env host=http://localhost:4000",
+    "cypress-docker": "sudo ./scripts/restart.sh && cypress open --env host=http://localhost:4000"
   },
   "repository": {
     "type": "git",

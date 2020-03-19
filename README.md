@@ -24,7 +24,15 @@ docker run -d -p 4000:4000 --name blog -v "$PWD":/srv/jekyll blog
 
 or execute "docker_install_run.sh" from "scripts" folder.
 
-### Run:
+### Run/Stop:
+
+#### Option 1) Jekyll:
+```bash
+npm run jekyll
+npm run jekyll-stop
+```
+
+#### Option 2) Docker:
 ```bash
 docker start blog
 docker stop blog
@@ -36,3 +44,18 @@ docker restart blog
 
 or execute "restart.sh" from "scripts" folder.
 Page will be available at http://localhost:4000/
+
+### Testing:
+
+#### Option 1) Jekyll:
+```bash
+npm run test
+npm run cypress
+
+```
+
+#### Option 2) Docker:
+```bash
+npm run test-docker
+npm run cypress-docker
+```
