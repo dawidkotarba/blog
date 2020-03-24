@@ -823,18 +823,6 @@ pre {
   font-size: 16px;
 }
 
-.img-transform {
-  filter: brightness(90%) saturate(90%) hue-rotate(15deg);
-  -webkit-transition: 3s;
-  transition: 3s;
-}
-
-.img-transform:hover {
-   filter: brightness(110%) saturate(180%) hue-rotate(-15deg);
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
- }
-
 .navbar-nav {
   margin-left: 25%;
 }
