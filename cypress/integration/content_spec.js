@@ -9,7 +9,7 @@ describe('Content tests', () => {
     });
 
     it('Should display main image', () => {
-        cy.get('body > div > header > div.big-img.intro-header.img-transform').scrollIntoView().should('be.visible');
+        cy.get('body > div > header > div.big-img.intro-header').scrollIntoView().should('be.visible');
     });
 
     it('Cookie popup shall be visible', () => {
