@@ -2,7 +2,7 @@
 [![codebeat badge](https://codebeat.co/badges/f7bad784-7732-4cd8-a27f-de09ad3f49f9)](https://codebeat.co/projects/github-com-dawidkotarba-blog-gh-pages)
 
 # https://dawidkotarba.github.io/blog
-My personal miniblog - under construction
+My personal miniblog
 
 ### Credits:
 - Theme: https://github.com/daattali/beautiful-jekyll
