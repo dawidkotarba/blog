@@ -13,7 +13,7 @@ function show_yesno_box(){
 }
 
 if show_yesno_box "Push to github pages?"; then
-    npm run test-firefox && npm run test-chrome
+    npm run test
 
     if [ $? -ne 0 ]; then
         echo "Tests must pass before commit."
