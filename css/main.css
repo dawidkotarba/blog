@@ -858,7 +858,3 @@ pre {
   z-index: 9999;
   visibility: hidden;
 }
-
-.navbar-toggle {
-    float: left !important;
-}

@@ -6,6 +6,7 @@ common-css:
   - "/css/main.css"
   - "/css/animate.min.css"
   - "/css/aos.css"
+  - "/css/progress-button.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -17,7 +18,7 @@ common-js:
   - "/js/bootstrap.min.js"
   - "/js/main.js"
   - "/js/aos.js"
-  - "/js/prognroll.min.js"
+  - "/js/progress-button.js"
   - "/js/custom.js"
   - "/js/cookie-popup.js"
 ---
@@ -38,6 +39,11 @@ common-js:
     {% include footer.html %}
 
     {% include footer-scripts.html %}
+  </div>
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
   </div>
 
   <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
