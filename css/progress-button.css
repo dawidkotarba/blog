@@ -61,6 +61,7 @@
     z-index: 2;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+    transform: scale(1.5);
 }
 
 .progress-wrap::after {
