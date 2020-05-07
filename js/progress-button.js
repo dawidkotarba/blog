@@ -1,8 +1,5 @@
 $(document).ready(function () {
     "use strict";
-
-    //Scroll back to top
-
     var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
     progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
@@ -12,10 +9,9 @@ $(document).ready(function () {
     progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
     var updateProgress = function () {
         var scroll = $(window).scrollTop();
-        var height = $(document).height() - $(window).height();
-        var progress = pathLength - (scroll * pathLength / height);
-        progressPath.style.strokeDashoffset = progress;
-    }
+        var height = $(document).height() - $(window).outerHeight();
+        progressPath.style.strokeDashoffset = pathLength - (scroll * pathLength / height);
+    };
     updateProgress();
     $(window).scroll(updateProgress);
     var offset = 50;
