@@ -16,7 +16,7 @@
     background: #e7e7e7;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
     .progress-wrap {
         display: none;
     }
