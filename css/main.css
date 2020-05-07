@@ -858,3 +858,8 @@ pre {
   z-index: 9999;
   visibility: hidden;
 }
+
+.readtime {
+    color: #808080;
+    font-style: italic;
+}

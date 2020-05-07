@@ -22,6 +22,7 @@ Images from Unsplash by:
     - lozad.js: https://github.com/ApoorvSaxena/lozad.js
     - Pace: https://github.hubspot.com/pace/docs/welcome
     - Back top scroll indicator: https://www.jqueryscript.net/other/back-top-scroll-indicator.html
+    - Read time: https://www.jqueryscript.net/other/Medium-Inspired-jQuery-Read-Time-Estimating-Plugin-readtime.html
 
 ### Build:
 ```
