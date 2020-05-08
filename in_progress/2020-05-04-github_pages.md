@@ -11,7 +11,7 @@ comments: true
 Recently I have seen a couple of personal pages and they were pretty awesome. They were mostly designed by front-end folks who showed off their great design and coding skills.
 As I use GitHub regularly and it offers free hosting static web pages for repositories, I decided to refresh a little bit of my front-end knowledge and create one. I guess a backend guy does not need such a page but I also think having one will not harm. I am going to document what I did, maybe it will be useful for someone who would like to develop a similar page. One disclaimer -  I am back-end guy so do not expect any rocket science here, yet the page works and looks fine I think :)
 
-### New project in NPM.
+### New project in NPM
 As I am going to have few dependencies on a cool libraries, I decided to use NPM to manage that. As I use linux, installing nodejs/npm is that simple:
 
 ```bash
@@ -61,7 +61,14 @@ Below the example of the package.json for my personal site. I have removed most 
 
 ```
 
-"^ -> o co chodzi z tym?
+For those unfamiliar with deps management in package.json:
+- ~X.Y.Z - it means "npm update" will update only the patch version (so "Z")
+- ^X.Y.Z - it means  "npm update" will update only the minor version (so "Y" and "Z" in this case)
+If somone wants to upgrade deps, there is a good tool for that - npm-check-updates. It will check and update versions in package.json.
+```bash
+npm install -g npm-check-updates
+ncu -u
+```
 
 ======================================
 
