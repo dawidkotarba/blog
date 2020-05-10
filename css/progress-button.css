@@ -28,13 +28,13 @@
 }
 
 .progress-wrap:hover {
-    background: #a8a8a8;
+    background: white;
     transform: scale(1.5);
 
     /*shadow*/
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.60);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.60);
 }
 
 .progress-wrap:active {
