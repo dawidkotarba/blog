@@ -39,6 +39,22 @@ describe('Menu buttons tests', () => {
             .should('have.prop', 'href')
             .and('equal', 'https://github.com/dawidkotarba/blog')
     });
+
+    it('should show scroll to top after clicking scroll up button', () => {
+        // top of the page - button not visible
+        cy.get('.progress-wrap').should('not.be.visible');
+        // scroll to see button
+        cy.scrollTo(0, 500);
+        // button appears
+        cy.get('.progress-wrap').should('be.visible');
+        cy.get('.progress-wrap').click();
+        // scrolling - need to wait
+        cy.wait(1000);
+        cy.window().then(($window) => {
+            expect($window.scrollY).to.be.closeTo(0, 0);
+        });
+        cy.get('.progress-wrap').should('not.be.visible');
+    })
 });
 
 describe('Input search tests', () => {
