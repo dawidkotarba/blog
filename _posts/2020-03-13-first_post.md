@@ -2,7 +2,6 @@
 layout: post
 title: First (welcome) post is there!
 subtitle: It took 10 years of coding to get to this point :)
-image: /img/hello_world.jpeg
 bigimg: /img/path.jpg
 tags: [blogging]
 comments: true
