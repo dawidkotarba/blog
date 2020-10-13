@@ -4,28 +4,9 @@
 # https://dawidkotarba.github.io/blog
 My personal miniblog
 
-### Credits:
-- Theme: https://github.com/daattali/beautiful-jekyll
-
-Images from Unsplash by:
-- Victor Malyushev
-- Shahadat Rahman
-- Greg Rakozy
-- Martin Wilner
-- Aryan Dhiman
-- Esteban Lopez
-- seth schwiet
-
-- Few awesome libraries used:
-    - AOS: https://github.com/michalsnik/aos
-    - Animate CSS: https://github.com/daneden/animate.css
-    - lozad.js: https://github.com/ApoorvSaxena/lozad.js
-    - Pace: https://github.hubspot.com/pace/docs/welcome
-    - Back top scroll indicator: https://www.jqueryscript.net/other/back-top-scroll-indicator.html
-    - Read time: https://www.jqueryscript.net/other/Medium-Inspired-jQuery-Read-Time-Estimating-Plugin-readtime.html
-
 ### Build:
-```
+```bash
+npm install
 docker build -t blog "$PWD"
 docker run -d -p 4000:4000 --name blog -v "$PWD":/srv/jekyll blog
 ```
@@ -67,3 +48,23 @@ npm run cypress
 npm run test-docker
 npm run cypress-docker
 ```
+
+### Credits:
+- Theme: https://github.com/daattali/beautiful-jekyll
+
+Images from Unsplash by:
+- Victor Malyushev
+- Shahadat Rahman
+- Greg Rakozy
+- Martin Wilner
+- Aryan Dhiman
+- Esteban Lopez
+- seth schwiet
+
+- Few awesome libraries used:
+    - AOS: https://github.com/michalsnik/aos
+    - Animate CSS: https://github.com/daneden/animate.css
+    - lozad.js: https://github.com/ApoorvSaxena/lozad.js
+    - Pace: https://github.hubspot.com/pace/docs/welcome
+    - Back top scroll indicator: https://www.jqueryscript.net/other/back-top-scroll-indicator.html
+    - Read time: https://www.jqueryscript.net/other/Medium-Inspired-jQuery-Read-Time-Estimating-Plugin-readtime.html
