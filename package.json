@@ -14,8 +14,8 @@
     "test": "npm run test-chrome",
     "testall": "npm run test-firefox && npm run test-chrome",
     "test-docker": "npm run test-firefox-docker && npm run test-chrome-docker",
-    "test-firefox-prod": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog",
-    "test-chrome-prod": "cypress run --headless --browser chrome --env host=https://dawidkotarba.github.io/blog",
+    "test-firefox-prod": "cypress run --headless --browser firefox --env host=https://dawidkotarba.github.io/blog --config video=false",
+    "test-chrome-prod": "cypress run --headless --browser chrome --env host=https://dawidkotarba.github.io/blog --config video=false",
     "test-prod": "npm run test-chrome-prod",
     "cypress": "npm run jekyll-background; cypress open --env host=http://localhost:4000",
     "cypress-docker": "sudo ./scripts/restart.sh && cypress open --env host=http://localhost:4000"
