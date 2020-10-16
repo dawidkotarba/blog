@@ -1,0 +1,30 @@
+---
+layout: post
+title: Jenkins for the lazy
+subtitle: Automating things that are automated
+bigimg: /img/path.jpg
+tags: [jenkins, automation]
+comments: true
+---
+
+I guess nobody likes creating Jenkins jobs. And probably their maintenance is even worse, if done manually. There are bunch of tools that come to the rescuse
+and here I will describe them in a nutshell.
+
+### Little bit of history
+
+### Job DSL in a nutshell
+- loops
+- creating jobs for pipelines
+- creating jobs for multibranch pipelines
+
+### Jenkins pipelines approach
+- declarative approach
+- when clause
+- agents and lightweight threads
+- cron trigger etc.
+- parameters
+- sending emails, jacoco etc.
+
+### Combining them together for a really lazy developer:)
+
+### Creating views
