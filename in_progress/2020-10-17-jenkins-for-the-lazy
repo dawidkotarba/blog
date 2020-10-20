@@ -1,21 +1,143 @@
 ---
 layout: post
-title: Jenkins for the lazy
+title: Jenkins for the smart and lazy
 subtitle: Automating things that are automated
 bigimg: /img/path.jpg
 tags: [jenkins, automation]
 comments: true
 ---
 
-I guess nobody likes creating Jenkins jobs. And probably their maintenance is even worse, if done manually. There are bunch of tools that come to the rescuse
+I guess nobody likes creating Jenkins jobs. And probably their maintenance is even worse, if done manually. There are a bunch of tools that come to the rescue
 and here I will describe them in a nutshell.
 
-### Little bit of history
+### Create your local Jenkins in less than a minute
+In order to achieve this pretty tight deadline, let's just use the docker. I am showing commands for Linux here, I suppose in Windows things can be slightly more
+complicated, but I can be mistaken of course.
+
+To get the docker, let's install a docker compose:
+```shell
+apt install docker-compose
+```
+
+Now, let's pull the Jenkins and configure it (in this example to use the persistent storage and run on 8081)
+```shell
+# pull the Jenkins image
+docker image pull jenkins/jenkins:lts
+
+# create a persistent volume called jenkinsvol
+docker volume create jenkinsvol
+
+# run the Jenkins on 8081 and make it use the storage. Let's call the container jenkins-local
+docker container run -d -p 8081:8080 -v jenkinsvol:/var/jenkins_home --name jenkins-local jenkins/jenkins:lts
+```
+
+The Jenkins should become accessible under http://localhost:8081
+
+In order to get the admin password needed to set up the Jenkins, execute below:
+```shell
+docker container exec jenkins-local sh -c "cat /var/jenkins_home/secrets/initialAdminPassword"
+```
+
+Voila! Now you can start/stop jenkins by using docker:
+```bash
+sudo docker start jenkins-local
+sudo docker stop jenkins-local
+
+```
+Thanks to that, it is possible to quickly check below pipelines.
+
+### Bit of history
+There are a bunch of tools that can help us in automation of mundane tasks in Jenkins.
+Job DSL and Jenkins pipelines are my favourites and can be even more powerful when combined.
 
 ### Job DSL in a nutshell
-- loops
+Job DSL is an early approach to automate creation of Jenkins jobs. Instead of doing all the configuration manually, the plugin allowed to code the configuration in Groovy.
+The execution of such a script will result in creating a Jenkins job, exactly the same as done manually. The power of that solution comes also with the Groovy language.
+It is possible to create multiple different types of jobs in one script - also in loops, with different variables etc. In other words - one parametrized loop can create lots of different jobs
+in few seconds. Additionally, putting them in a VCS will preserve all configuration changes and give additional context to their reader about changes from the past.
+
+A further description of the plugin is available here: https://plugins.jenkins.io/job-dsl. Generally speaking, to execute a DSL script, we need:
+1. Install the plugin in Jenkins.
+2. Create a seed job that will create another jenkins jobs from the script. We need to put the script in the Build/Process Job DSLs section.
+3. Run the seed that will generate Jenkins jobs.
+
+In a nutshell, if we want to create a simplest hello-world job, we can define it like that:
+
+```groovy
+job('hello-world') {
+  steps {
+    shell('echo Hello World!') // batchFile in Windows instead of shell
+  }
+}
+```
+
+It is possible to create pipelines and multibranch pipelines as well as views.
+The beauty of combining those things together is the result of overall automation we can achieve:
+1. One seed job can generate multiple pipelines and views
+2. Jenkins pipelines define further how to execute builds in details. They contain steps with the flow of the build execution (like clean, build, deploy etc). They are also a Groovy scripts (Jenkinsfile) so they can be stored in a VCS
+3. All created jobs are automatically placed in dedicated views based on regexp of their name
+4. Once all scripts are created, the execution of them takes just few seconds
+
+I will describe what are Jenkinsfiles below further, but first let's define an example seed job that will create a Jenkins multibranch pipeline called `pipeline-example` with few very common settings:
+
+```groovy
+multibranchPipelineJob('pipeline-example') { // this will be a multibranch pipeline
+    factory {
+        workflowBranchProjectFactory {
+            scriptPath('Jenkinsfile') // the path to the Jenkinsfile that will be executed
+        }
+    }
+    branchSources {
+        branchSource {
+            source {
+                gitSCMSource {
+                    remote('https://path-to-the-git-repo.git')
+                }
+            }
+        }
+    }
+    triggers {
+        periodic(30) //the repo is checked for the new code every 30 mins
+    }
+    orphanedItemStrategy {
+        discardOldItems {
+            numToKeep(5) // 5 jobs in history
+        }
+    }
+}
+```
+
+The multibranch pipeline is very suitable for a development purpose when devs are working on different branches. Every defined amount of time, all branches are scanned for the Jenkinsfile
+and built if the Jenkinsfile exists. It comes handy also while working heavily on the Jenkinsfiles itself - each branch can have different Jenkinsfiles, therefore different steps may be
+invoked for different branches.
+
+To create a pipeline job, we need couple of changes in the script:
+```groovy
+pipelineJob('pipeline-example') {
+  definition {
+    logRotator(-1, 5) // 5 jobs in history
+    cpsScm {
+      scm {
+        git {
+          branch 'master'
+          scriptPath 'Jenkinsfile'
+          remote {
+                name 'origin'
+                url 'https://path-to-the-git-repo.git'
+            }   
+        }
+      }
+    }
+  }
+}
+```
+
+It is possible to have several Jenkinsfiles in the project. They can have different names and be stored in different folders - we can reference them by their path in Job DSL scripts.
+
+TODO:
 - creating jobs for pipelines
 - creating jobs for multibranch pipelines
+- script for a view
 
 ### Jenkins pipelines approach
 - declarative approach
@@ -25,6 +147,6 @@ and here I will describe them in a nutshell.
 - parameters
 - sending emails, jacoco etc.
 
-### Combining them together for a really lazy developer:)
+### Combining them together!
 
-### Creating views
+### Useful links
