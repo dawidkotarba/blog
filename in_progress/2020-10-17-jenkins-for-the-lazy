@@ -135,8 +135,6 @@ pipelineJob('pipeline-example') {
 It is possible to have several Jenkinsfiles in the project. They can have different names and be stored in different folders - we can reference them by their path in Job DSL scripts.
 
 TODO:
-- creating jobs for pipelines
-- creating jobs for multibranch pipelines
 - script for a view
 
 ### Jenkins pipelines approach
@@ -146,6 +144,39 @@ TODO:
 - cron trigger etc.
 - parameters
 - sending emails, jacoco etc.
+
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage("Prepare") {
+            steps {
+                sh "chmod +x gradlew"
+            }
+        }
+        stage("Clean") {
+            steps {
+                sh "./gradlew clean"
+            }
+        }
+        stage("Build") {
+            steps {
+                sh "./gradlew build -x test"
+            }
+        }
+        stage("Javadoc") {
+            steps {
+                sh "./gradlew javadoc"
+            }
+        }
+        stage("Test") {
+            steps {
+                sh "./gradlew test"
+            }
+        }
+    }
+}
+```
 
 ### Combining them together!
 
