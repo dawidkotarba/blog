@@ -2,7 +2,7 @@
 layout: post
 title: Jenkins for the smart and lazy
 subtitle: Automating the automation ;)
-bigimg: /img/path.jpg
+bigimg: /img/posts/eric-krull-Ejcuhcdfwrs-unsplash.jpg
 tags: [jenkins, automation]
 comments: true
 ---
@@ -56,7 +56,7 @@ The execution of such a script will result in creating a Jenkins job, exactly th
 It is possible to create multiple different types of jobs in one script - also in loops, with different variables, etc. In other words - one parametrized loop can create lots of different jobs
 in a few seconds. Additionally, putting them in a VCS will preserve all configuration changes and give additional context to their reader about changes from the past.
 
-A further description of the plugin is available here: https://plugins.jenkins.io/job-dsl. Generally speaking, to execute a DSL script, we need:
+A further description of the plugin is available here: [Job DSL Jenkins plugin](https://plugins.jenkins.io/job-dsl). Generally speaking, to execute a DSL script, we need:
 1. Install the plugin in Jenkins.
 2. Create a seed job that will generate other jenkins jobs from the script. We need to put the script in the Build/Process Job DSLs section.
 3. Run the seed that will generate Jenkins jobs.
@@ -160,7 +160,7 @@ listView('My project') {
 If we have multiple projects, it is a good idea just to run the above in a loop and parametrize descriptions, names and regexps. The script will quickly place all jobs in a dedicated view.
 Fast, simple, beautiful!
 
-A further documentation about views (and the pipeline plugin itself) is available here: https://jenkinsci.github.io/job-dsl-plugin/#path/listView
+A further documentation about views (and the pipeline plugin itself) is available here: [Job DSL plugin documentation](https://jenkinsci.github.io/job-dsl-plugin/#path/listView)
 
 ### Jenkins pipelines approach
 The Job DSL plugin did (and still does!) a great... job, but a Jenkins' approach is even better! It does not only allow to store the job configuration as code,
@@ -246,7 +246,7 @@ pipleine {
     }
 }
 ```
-More info about i.e. conditional execution can be found here: https://www.jenkins.io/blog/2017/01/19/converting-conditional-to-pipeline/
+More info about i.e. conditional execution can be found here: [Converting conditional to pipeline](https://www.jenkins.io/blog/2017/01/19/converting-conditional-to-pipeline).
 
 There are a bunch of useful plugins that can be configured this way. If someone is working with BitBucket, I strongly recommend using the "Bitbucket Server Notifier Plugin for Jenkins".
 The configuration is incredibly simple, and we will gain the ability to recognize whether our particular commit is building correctly in Jenkins by looking at BitBucket.
@@ -282,3 +282,6 @@ Flyweight executors are used to orchestrate the workload, and the real job is ha
 ### Combining them together!
 The combination of the Job DSL plugin and Jenkins Pipelines is incredibly powerful. We code not only the execution flow but the job and view creation itself. 
 And everything spiced up by the Groovy syntax! A simple loop, a few variables and flows defined in Jenkinsfiles - entire projects ready to create in seconds!
+
+### Credits:
+- Photo by Eric Krull on Unsplash
