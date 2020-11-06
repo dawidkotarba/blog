@@ -2,7 +2,7 @@
 layout: post
 title: Jenkins for the smart and lazy
 subtitle: Automating the automation ;)
-bigimg: /img/posts/eric-krull-Ejcuhcdfwrs-unsplash.jpg
+bigimg: /img/posts/jason-leung-HBGYvOKXu8A-unsplash.jpg
 tags: [jenkins, automation]
 comments: true
 ---
@@ -284,4 +284,4 @@ The combination of the Job DSL plugin and Jenkins Pipelines is incredibly powerf
 And everything spiced up by the Groovy syntax! A simple loop, a few variables and flows defined in Jenkinsfiles - entire projects ready to create in seconds!
 
 ### Credits:
-- Photo by Eric Krull on Unsplash
+- Photo by Jason Leung on Unsplash
