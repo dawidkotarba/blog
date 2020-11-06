@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jenkins for the smart and lazy
-subtitle: Automating things that are automated
+subtitle: Automating the automation ;)
 bigimg: /img/path.jpg
 tags: [jenkins, automation]
 comments: true
@@ -280,3 +280,5 @@ Basically speaking, the master spawns something called flyweight executors - unl
 Flyweight executors are used to orchestrate the workload, and the real job is handled by the heavyweight executors on the defined agent. Still, if your Jenkins master is not permitted to spawn working threads, it will not be able to orchestrate the execution of the Jenkinsfile.
 
 ### Combining them together!
+The combination of the Job DSL plugin and Jenkins Pipelines is incredibly powerful. We code not only the execution flow but the job and view creation itself. 
+And everything spiced up by the Groovy syntax! A simple loop, a few variables and flows defined in Jenkinsfiles - entire projects ready to create in seconds!
