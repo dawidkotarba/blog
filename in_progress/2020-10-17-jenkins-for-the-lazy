@@ -134,49 +134,125 @@ pipelineJob('pipeline-example') {
 
 It is possible to have several Jenkinsfiles in the project. They can have different names and be stored in different folders - we can reference them by their path in Job DSL scripts.
 
-TODO:
-- script for a view
+### Automating views creation
+As I have mentioned earlier, it is possible also to create views. They are very convenient, because created jobs are automatically placed in dedicated views based on regexp of their name.
+No more updating views manually or searching for a particular job! The only thing we need to remember is to keep already established naming convention (i.e. same prefix for the job name, i.e. `myproject-development`, `myproject-release` etc.).
+There are lots of more complex views available in the documentation, but the simple list view is suitable for the most use cases I think.
+In order to create such a list for all jobs with "my-project" regexp and standard columns, we can just invoke below job DSL script:
+```groovy
+listView('My project') {
+    description('This is my awesome project')
+    jobs {
+        name('My project job')
+        regex(/myproject.*/)
+    }
+    columns {
+        status()
+        weather()
+        name()
+        lastSuccess()
+        lastFailure()
+        lastDuration()
+        buildButton()
+    }
+}
+```
+If we have multiple projects, it is a good idea just to run above in a loop and parametrize descriptions, names and regexps. The script will quickly place all jobs in dedicated view.
+Fast, simple and beautiful!
+
+A further documentation about views (and the pipeline plugin itself) is available here: https://jenkinsci.github.io/job-dsl-plugin/#path/listView
 
 ### Jenkins pipelines approach
-- declarative approach
-- when clause
-- agents and lightweight threads
-- cron trigger etc.
-- parameters
-- sending emails, jacoco etc.
+The Job DSL plugin did (and still does!) a great... job, but a Jenkins' approach is even better! It does not only allow to store the job configuration as code,
+but also comes with a pretty UI that can show the job execution.
+In this section, I will talk about a declarative approach of Jenkins Pipelines.
+The idea is pretty simple - we just need to create a script that contains several steps of the execution.
+Steps can execute a shell commands, other scripts, run other jobs, use parametrized values and invoke other plugins (if those plugins supports the Jenkins Pipelines because not all do).
+Once we have the Jenkinsfile ready, we need to create a pipeline job (or multibranch pipeline) and point the Jenkinsfile (i.e. by providing the path in the repository or just pasting the script).
+Done!
+
+Below there is an example of a simple pipeline that will just build a gradle project.
 
 ```groovy
 pipeline {
     agent any
     stages {
-        stage("Prepare") {
+        stage('Clean') {
             steps {
-                sh "chmod +x gradlew"
+                sh 'chmod +x gradlew'
+                sh './gradlew clean'
             }
         }
-        stage("Clean") {
+        stage('Build') {
             steps {
-                sh "./gradlew clean"
+                sh './gradlew build -x test'
             }
         }
-        stage("Build") {
+        stage('Test') {
             steps {
-                sh "./gradlew build -x test"
+                sh './gradlew test'
             }
         }
-        stage("Javadoc") {
+        stage('Javadoc') {
             steps {
-                sh "./gradlew javadoc"
+                sh './gradlew javadoc'
             }
         }
-        stage("Test") {
-            steps {
-                sh "./gradlew test"
-            }
+    // further steps...
+    }
+}
+```
+
+Sometimes there is a need to additionally checkout the code from a different branch. This can be achieved simply by defining the branch and url to the repo:
+
+```groovy
+stage('Checkout') {
+    steps {
+        git branch: 'master', url: 'http://gitRepoUrl.git'
+    }
+}
+```
+
+The script can be parametrized further, below some basic but pretty useful settings:
+```groovy
+pipleine {
+    agent { label 'myserver' } // the agent the script is going to be executed on
+    triggers { cron('@daily') } // the trigger to run the job, in this example a cron (specific or daily, hourly etc.)
+    environment {
+        myEnvVariable = '123' // env variables
+    }
+    options { disableConcurrentBuilds() } // additional options, here example to build sequentially
+    paramemters {
+        string defaultValue: '', description: 'My string param that will be trimmed', name: 'myStringValue', trim: true
+        booleanParam defaultValue: true, description: 'To be or not to be?', name: 'myBooleanValue' // parameters, like strings, enums, and the most tricky - booleans!
+    }
+    // further settings...
+    stage('Task performed only on master') {
+        when {
+            branch 'master'
+        }
+        steps {
+            sh 'echo hello my master!'
+            sh "This is my env variable: ${myEnvVariable}"
+        }
+    }
+    stage('Something performed based on the boolean value') {
+        when {
+            expression { return myBooleanValue ==~ /(?i)(Y|YES|T|TRUE|ON|RUN)/ }
+        }
+        steps {
+            sh 'echo booleans are tricky!'
         }
     }
 }
 ```
+More info about i.e. conditional execution can be found here: https://www.jenkins.io/blog/2017/01/19/converting-conditional-to-pipeline/
+
+### Who does the job?
+It is worth noting that in the case of the Jenkins Pipelines execution, both master and the agent need to cooperate to run the script.
+Basically speaking, the master spawns something called a flyweight executors - unlimited and created automatically when needed, unlike heavyweight executors, which are limited based on their node’s configuration.
+Flyweight executors are used to orchestrate the workload, and the real job is handled by the heavyweight executors on the defined agent. Still, if your Jenkins master is not permitted to spawn working threads, it will not be able to orchestrate the execution of the Jenkinsfile.
+- sending emails, jacoco etc.
 
 ### Combining them together!
 
