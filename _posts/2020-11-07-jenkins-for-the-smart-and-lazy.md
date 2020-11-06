@@ -2,7 +2,7 @@
 layout: post
 title: Jenkins for the smart and lazy
 subtitle: Automating the automation ;)
-bigimg: /img/posts/jason-leung-HBGYvOKXu8A-unsplash.jpg
+bigimg: /img/posts/ken-cheung-KonWFWUaAuk-unsplash.jpg
 tags: [jenkins, automation]
 comments: true
 ---
@@ -282,6 +282,3 @@ Flyweight executors are used to orchestrate the workload, and the real job is ha
 ### Combining them together!
 The combination of the Job DSL plugin and Jenkins Pipelines is incredibly powerful. We code not only the execution flow but the job and view creation itself. 
 And everything spiced up by the Groovy syntax! A simple loop, a few variables and flows defined in Jenkinsfiles - entire projects ready to create in seconds!
-
-### Credits:
-- Photo by Jason Leung on Unsplash
