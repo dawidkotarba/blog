@@ -863,3 +863,13 @@ pre {
     color: #808080;
     font-style: italic;
 }
+
+.img-transform {
+  filter: brightness(90%) saturate(90%);
+  transition: 1.5s;
+}
+
+.img-transform:hover {
+   filter: brightness(120%) saturate(130%) hue-rotate(-20deg);
+   transition: 1.5s;
+ }
