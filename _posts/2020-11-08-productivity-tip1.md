@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dev productivity #1 - get a trackball!
+title: Dev productivity: tip 1 - get a trackball!
 subtitle: Trackball for the rescue
 bigimg: /img/posts/trackball.jpg
 tags: [productivity, hardware]
