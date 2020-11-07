@@ -617,7 +617,7 @@ footer .theme-by {
   padding: 10px 5px;
   background-color: #FFF;
   border-radius: 0;
-  color: #404040;
+  color: #242424;
   transition: .5s;
 }
 @media only screen and (min-width: 768px) {
@@ -629,7 +629,7 @@ footer .theme-by {
 .pager li a:focus {
   color: #FFF;
   border: 1px solid {{ site.hover-col }};
-  background-color: {{ site.hover-col }};
+  background-color: #242424;
   transform: scale(1.1);
 }
 
