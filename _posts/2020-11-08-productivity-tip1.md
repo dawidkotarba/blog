@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Dev productivity #1 - get a tracbkall!
+title: Dev productivity #1 - get a trackball!
 subtitle: Trackball for the rescue
-bigimg: /img/posts/alice-donovan-rouse-pZ61ZA8QgcY-unsplash.jpg
-tags: [productivity]
+bigimg: /img/posts/trackball.jpg
+tags: [productivity, hardware]
 comments: true
 ---
 
