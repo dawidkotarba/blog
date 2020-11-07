@@ -4,7 +4,7 @@ title: Test markdown
 subtitle: Each post also has a subtitle
 gh-repo: dawidkotarba/blog
 image: /img/hello_world.jpeg
-bigimg: /img/path.jpg
+bigimg: /img/posts/alice-donovan-rouse-pZ61ZA8QgcY-unsplash.jpg
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
