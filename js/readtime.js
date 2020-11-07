@@ -16,7 +16,7 @@
 $(document).ready(function () {
     $('.blog-post').readtime({
         class: 'readtime',   // Class name of the output element
-        format: '◔ # min read', // # == the number of minutes
+        format: '~ # min read', // # == the number of minutes
         images: 12,           // Seconds per image, false to disable
         wpm: 275,          // Words per minute, defaults to average
         wrapper: 'time'        // What the output will be wrapped in
