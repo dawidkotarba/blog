@@ -9,7 +9,7 @@ comments: true
 
 There are lots of tips and tricks that can make our life and work easier. I love them because thanks to simple things
 I can save lots of time and effort every day. Therefore, I am going to share a few things that work for me. I can be the only person in the
-the universe for whom those things work, nevertheless maybe they will (or already are) work for you!
+universe for whom those things work, nevertheless maybe they will (or already are) work for you!
 
 ### Tip #1 - replace your mouse with a trackball!
 I have used a mouse for decades. Of course, from time to time I changed them as the technology evolved. A ball-based to an optical, then to laser and wireless. The comfort of usage was higher over time
@@ -29,7 +29,7 @@ In recent days, a successor of M750 came out - M757 that looks like a better opt
 Frankly speaking, I do not have a long story to tell, as - to my surprise - I got used to working with a trackball in about a day. Still, I can remember a few things:)
 
 #### Day 1. Trackball unpacked and ready for work! I worked about 7hrs with a trackball on the first day. My feelings that day:
-- Initially, I felt using a mouse a little bit more comfortable. Operating by a wheel was not as accurate as using a mouse. I had also to increase the pointer speed to decrease the ball movement.
+- Initially, I felt using a mouse a little more comfortable. Operating by a wheel was not as accurate as using a mouse. I had also to increase the pointer speed to decrease the ball movement.
 - I felt my thumb muscles a little exhausted after this first day. Still, less overall pain in my hand.
 - After all, the experience was pretty good. I thought it would be more difficult to get used to the trackball. By the end of the day, I almost forgot I was using a different device.
 
@@ -48,4 +48,4 @@ Frankly speaking, I do not have a long story to tell, as - to my surprise - I go
 ### Summary after few weeks
 Overall, thanks to a trackball, my work performance has increased - I can navigate quickly and with less effort. Still, I have slightly lower accuracy than by using a mouse, but the
 difference is hardly noticeable. I can sacrifice that for the speed and comfort of a trackball. I can use a trackball anywhere - this is a big plus too. I do not feel hand exhaustion after a 
-day of work at all. It is a pity I have not tried trackballs earlier. I understand not everybody may like them but I am sure every programmer should give them a try. Most likely it will pay off significantly!
+day of work at all. It is a pity I have not tried trackballs earlier. I understand that not everybody may like them, but I am sure every programmer should give them a try. Most likely it will pay off significantly!
