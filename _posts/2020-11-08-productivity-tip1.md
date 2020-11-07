@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dev tips no. 1 - get a trackball!
-subtitle: Trackball for the rescue
+subtitle: This geeky thing will make you happy!
 bigimg: /img/posts/trackball.jpg
 tags: [productivity, hardware]
 comments: true
