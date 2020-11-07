@@ -2,7 +2,7 @@
 layout: post
 title: Java's guy journey to GitHub pages - part 1
 subtitle: What I learned from the journey?
-bigimg: /img/seth-schwiet-WB3ujiKLJwQ-unsplash.jpg
+bigimg: /img/posts/simon-berger-twukN12EN7c-unsplash.jpg
 tags: [front-end]
 comments: true
 ---
