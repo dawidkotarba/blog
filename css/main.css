@@ -422,8 +422,8 @@ footer .theme-by {
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: {{ site.hover-col }};
-  background-color: #EEE;
+  color: #FFFFFF;
+  background-color: #242424;
   -webkit-transition: color .7s;
   transition: color .7s;
 }
