@@ -874,3 +874,8 @@ pre {
   filter: brightness(120%);
   transform: scale(1.05);
  }
+
+/* code box */
+.highlight {
+  font-size: 13px;
+}
