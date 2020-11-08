@@ -885,12 +885,12 @@ pre code {
 /* Cookie button */
 .cookieBtn {
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 6px;
   display: inline-block;
   cursor: pointer;
   color: #000000;
   font-size: 16px;
-  padding: 5px 5px;
+  padding: 1px 10px;
   text-decoration: none;
 }
 .cookieBtn:hover {
