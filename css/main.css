@@ -902,3 +902,8 @@ pre code {
   position: relative;
   top: 1px;
 }
+
+/* Container */
+.container {
+  word-break: break-word;
+}
