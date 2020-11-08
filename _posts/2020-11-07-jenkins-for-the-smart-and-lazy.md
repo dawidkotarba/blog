@@ -45,7 +45,7 @@ sudo docker stop jenkins-local
 ```
 OK! Now we can play with the fun stuff!
 
-### Bit of history
+### A Bit of history
 There are a bunch of tools that can help us in the automation of mundane tasks in Jenkins.
 Job DSL and Jenkins pipelines are my favorites and can be even more powerful when combined.
 
