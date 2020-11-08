@@ -880,3 +880,24 @@ pre code {
   white-space: pre;
   font-size: 14px;
 }
+
+/* Cookie button */
+.cookieBtn {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+.cookieBtn:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+.cookieBtn:active {
+  text-decoration: none;
+  position: relative;
+  top: 1px;
+}
