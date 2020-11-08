@@ -877,6 +877,15 @@ pre {
       filter: brightness(120%);
       transform: scale(1.05);
      }
+
+     .txt-transform {
+       transition: transform 2s;
+       transform-origin: center center;
+     }
+
+     .txt-transform:hover {
+       transform: scale(1.1);
+     }
 }
 /* code box */
 pre code {
