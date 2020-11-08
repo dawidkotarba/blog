@@ -619,6 +619,7 @@ footer .theme-by {
   border-radius: 0;
   color: #242424;
   transition: .5s;
+  border-radius: 6px
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
