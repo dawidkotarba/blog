@@ -831,12 +831,12 @@ pre {
 
 .search-box {
   width: 100%;
-  max-width: 720px;
   padding: 5px;
   outline: none !important;
   border:1px solid #808080;
   box-shadow: none !important;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .search-box::placeholder {
@@ -920,4 +920,27 @@ pre code {
 /* Container */
 .container {
   word-break: break-word;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 20px;
+  border: solid #c2c2c2;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.article-card:hover {
+  border-color: #CC0356;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
+
+  transform: scale(1.07);
+  cursor: pointer;
 }
