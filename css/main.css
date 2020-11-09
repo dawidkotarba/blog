@@ -844,6 +844,7 @@ pre {
 }
 
 .search-box:focus {
+  background-color: #f5f5f5;
   outline: none !important;
   border: 2px solid black;
   box-shadow: none !important;
@@ -875,7 +876,6 @@ pre {
 
     .img-transform:hover {
       filter: brightness(120%);
-      transform: scale(1.05);
      }
 
      .txt-transform {
@@ -884,7 +884,7 @@ pre {
      }
 
      .txt-transform:hover {
-       transform: scale(1.1);
+       transform: scale(1.07);
      }
 }
 /* code box */
