@@ -5,7 +5,7 @@ describe('Content tests', () => {
     });
 
     it('The title should include information about the site', () => {
-        cy.title().should('contain', 'Thoughts Repository')
+        cy.title().should('contain', 'Unknown Exception')
     });
 
     it('Should display main image', () => {
