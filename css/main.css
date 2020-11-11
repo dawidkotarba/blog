@@ -932,6 +932,10 @@ pre code {
   -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
   box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
 
-  transform: scale(1.07);
+  transform: scale(1.08);
   cursor: pointer;
+}
+
+.article-card:active {
+  transform: scale(1.04);
 }
