@@ -782,19 +782,21 @@ pre {
 
 .tag-btn {
   margin: 5px;
-  background-color: #545454;
-  border-color: #545454;
+  background-color: white;
+  color: black;
+  border-color: #c2c2c2;
   transition: 1s;
   -webkit-transition: 1s;
   transform: scale(1);
 }
 
 .tag-btn:hover{
+  color: #FFF;
+  border: 1px solid #cccccc;
   background-color: #CC0356;
-  border-color: #878787;
+  transform: scale(1.1);
   transition: 1s;
   -webkit-transition: 1s;
-  transform: scale(1.1);
 }
 
 #full-tags-list {
