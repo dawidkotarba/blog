@@ -326,7 +326,8 @@ footer .theme-by {
 /* --- Post preview --- */
 
 .post-preview {
-  padding: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
 
@@ -356,7 +357,7 @@ footer .theme-by {
 .post-preview .post-subtitle {
   margin: 0;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-size: 18px;
 }
 .post-preview .post-meta,
@@ -941,4 +942,14 @@ pre code {
 
 .article-card:active {
   transform: scale(1.04);
+}
+
+.article-card-legend {
+  font-style: italic;
+  border: none;
+  font-size: 15px;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0;
 }
