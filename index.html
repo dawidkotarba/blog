@@ -15,7 +15,8 @@ use-site-title: true
 <div class="posts-list" data-aos="fade-right" data-aos-duration="1000">
     {% for post in paginator.posts %}
     <div data-aos="fade-up" data-aos-duration="1000">
-        <div class="article-card" onclick='navigateTo("{{ post.url | relative_url }}");'>
+        <fieldset class="article-card" onclick='navigateTo("{{ post.url | relative_url }}");'>
+            <legend class="article-card-legend">{{ post.date | date: site.date_format }}</legend>
             <article class="post-preview">
                 <h2 class="post-title">{{ post.title }}</h2>
 
@@ -24,10 +25,6 @@ use-site-title: true
                     {{ post.subtitle }}
                 </h3>
                 {% endif %}
-
-                <p class="post-meta">
-                    Posted on {{ post.date | date: site.date_format }}
-                </p>
 
                 <div class="post-entry-container">
                     {% if post.image %}
@@ -57,7 +54,7 @@ use-site-title: true
                 {% endif %}
 
             </article>
-        </div>
+        </fieldset>
     </div>
     {% endfor %}
 </div>
