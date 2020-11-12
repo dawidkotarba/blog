@@ -866,15 +866,6 @@ pre {
     .img-transform:hover {
       filter: brightness(120%);
      }
-
-     .txt-transform {
-       transition: transform 2s;
-       transform-origin: center center;
-     }
-
-     .txt-transform:hover {
-       transform: scale(1.07);
-     }
 }
 /* code box */
 pre code {
