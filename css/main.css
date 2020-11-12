@@ -421,7 +421,7 @@ footer .theme-by {
 .blog-tags a:hover {
   color: #FFFFFF;
   border-radius: 3px;
-  background-color: #CC0356;
+  background-color: #FFB23C;
   -webkit-transition: 1s;
   transform: scale(1.1);
 }
@@ -618,7 +618,7 @@ footer .theme-by {
 .pager li a:focus {
   color: #FFF;
   border: 1px solid #cccccc;
-  background-color: #CC0356;
+  background-color: #FFB23C;
   transform: scale(1.1);
 }
 
@@ -788,7 +788,7 @@ pre {
 .tag-btn:hover{
   color: #FFF;
   border: 1px solid #cccccc;
-  background-color: #CC0356;
+  background-color: #FFB23C;
   transform: scale(1.1);
   transition: 1s;
   -webkit-transition: 1s;
@@ -924,7 +924,7 @@ pre code {
 }
 
 .article-card:hover {
-  border-color: #CC0356;
+  border-color: #FFB23C;
   background-color: white;
   -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
   -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
