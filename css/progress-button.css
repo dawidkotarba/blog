@@ -100,7 +100,7 @@
 }
 
 .progress-wrap svg.progress-circle path {
-    stroke: black;
-    stroke-width: 4;
+    stroke: #FFB23C;
+    stroke-width: 6;
     box-sizing: border-box;
 }
