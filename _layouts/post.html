@@ -59,13 +59,13 @@ layout: base
         </li>
           {% else %}
           <li class="previous">
-            <a href="/" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
+            <a href="{{ '' | absolute_url }}" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
           </li>
         {% endif %}
 
         {% if page.previous.url and page.next.url %}
         <li class="previous">
-          <a class="pager-homepage" href="/" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
+          <a class="pager-homepage" href="{{ '' | absolute_url }}" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
         </li>
         {% endif %}
 
@@ -75,7 +75,7 @@ layout: base
         </li>
         {% else %}
         <li class="next">
-          <a href="/" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
+          <a href="{{ '' | absolute_url }}" data-toggle="tooltip" data-placement="top" title="Homepage">Homepage</a>
         </li>
         {% endif %}
       </ul>
