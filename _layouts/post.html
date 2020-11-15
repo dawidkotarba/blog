@@ -55,7 +55,7 @@ layout: base
       <ul class="pager blog-pager" data-aos="fade-up" data-aos-duration="1000">
         {% if page.previous.url %}
         <li class="previous">
-          <a href="{{ page.previous.url | relative_upreviousrl }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
         </li>
         {% endif %}
         <li class="previous">
