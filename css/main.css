@@ -940,3 +940,7 @@ pre code {
   padding-right: 5px;
   margin-bottom: 0;
 }
+
+.pager-homepage {
+  float: none !important;
+}
