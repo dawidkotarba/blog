@@ -941,6 +941,13 @@ pre code {
   margin-bottom: 0;
 }
 
-.pager-homepage {
+/* Central homepage button */
+.pager-homepage-central {
   float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pager-homepage-central {
+    display: none !important;
+  }
 }
