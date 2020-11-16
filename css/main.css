@@ -617,7 +617,7 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  border: 1px solid #cccccc;
+  border: 1px solid #EAEAEA;
   background-color: #FFB23C;
   transform: scale(1.1);
 }
@@ -642,7 +642,7 @@ table {
   padding: 0;
 }
 table tr {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #EAEAEA;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -652,13 +652,13 @@ table tr:nth-child(2n) {
 }
 table tr th {
   font-weight: bold;
-  border: 1px solid #cccccc;
+  border: 1px solid #EAEAEA;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #EAEAEA;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
@@ -779,7 +779,7 @@ pre {
   margin: 5px;
   background-color: white;
   color: black;
-  border-color: #c2c2c2;
+  border-color: #EAEAEA;
   transition: 1s;
   -webkit-transition: 1s;
   transform: scale(1);
@@ -787,7 +787,7 @@ pre {
 
 .tag-btn:hover{
   color: #FFF;
-  border: 1px solid #cccccc;
+  border: 1px solid #EAEAEA;
   background-color: #FFB23C;
   transform: scale(1.1);
   transition: 1s;
@@ -822,7 +822,7 @@ pre {
   width: 100%;
   padding: 5px;
   outline: none !important;
-  border: 2px solid #c2c2c2;
+  border: 1px solid #EAEAEA;
   box-shadow: none !important;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -835,14 +835,14 @@ pre {
 
 .search-box:focus {
   background-color: #f5f5f5;
+  border-color: #00A1D4;
   outline: none !important;
-  border: 2px solid #00A1D4;
   box-shadow: none !important;
 }
 
 .results-container {
   width: 100%;
-  border: 2px solid #c2c2c2;
+  border: 1px solid #EAEAEA;
   background-color: white;
   border-radius: 10px;
   position: absolute;
@@ -907,7 +907,7 @@ pre code {
 .article-card {
   background-color: white;
   border-radius: 20px;
-  border: 2px solid #c2c2c2;
+  border: 1px solid #EAEAEA;
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -919,9 +919,9 @@ pre code {
 .article-card:hover {
   border-color: #FFB23C;
   background-color: white;
-  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
-  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
-  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.30);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
 
   transform: scale(1.08);
   cursor: pointer;
@@ -950,4 +950,12 @@ pre code {
   .pager-homepage-central {
     display: none !important;
   }
+}
+
+.previous a {
+  border-color: #EAEAEA !important;
+}
+
+.next a {
+  border-color: #EAEAEA !important;
 }
