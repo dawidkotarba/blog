@@ -857,18 +857,6 @@ pre {
   font-style: italic;
 }
 
-/* Transformation of the header image for a desktop */
-@media only screen and (min-width: 768px) {
-    .img-transform {
-      transition: transform 2s, filter 1.5s ease-in-out;
-      transform-origin: center center;
-      filter: brightness(90%);
-    }
-
-    .img-transform:hover {
-      filter: brightness(120%);
-     }
-}
 /* code box */
 pre code {
   white-space: pre;
