@@ -249,10 +249,18 @@ pipleine {
     }
     stage('Something performed based on the boolean value') {
         when {
-            expression { return myBooleanValue ==~ /(?i)(Y|YES|T|TRUE|ON|RUN)/ }
+            expression { return params.myBooleanValue ==~ /(?i)(Y|YES|T|TRUE|ON|RUN)/ }
         }
         steps {
             sh 'echo booleans are tricky!'
+        }
+    }
+    stage('Something performed based on the string value') {
+        when {
+            expression { return !params.myStringValue?.isEmpty() }
+        }
+        steps {
+            sh 'echo hello my string!'
         }
     }
 }
