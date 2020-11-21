@@ -3,6 +3,7 @@ layout: post
 title: First (welcome) post is there!
 subtitle: It took 10 years of coding to get to this point :)
 bigimg: /img/posts/stephen-leonardi-gyIRjKPXupE-unsplash.jpg
+img-author: Stephen Leonardi
 tags: [blogging]
 comments: true
 ---

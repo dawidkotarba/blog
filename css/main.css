@@ -940,10 +940,18 @@ pre code {
   }
 }
 
+/*pager*/
 .previous a {
   border-color: #EAEAEA !important;
 }
 
 .next a {
   border-color: #EAEAEA !important;
+}
+
+/*Image author*/
+.img-author {
+  color: #EEE;
+  font-size: 13px;
+  font-style: italic;
 }

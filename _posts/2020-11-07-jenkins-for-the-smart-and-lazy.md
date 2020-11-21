@@ -3,6 +3,7 @@ layout: post
 title: Jenkins for the smart and lazy
 subtitle: Automating the automation ;)
 bigimg: /img/posts/ken-cheung-KonWFWUaAuk-unsplash.jpg
+img-author: Ken Cheung
 tags: [jenkins, automation]
 comments: true
 ---
