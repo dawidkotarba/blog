@@ -1,0 +1,141 @@
+.navbar-nav {
+    margin-left: 25%;
+}
+
+.search-box {
+    width: 100%;
+    padding: 5px;
+    outline: none !important;
+    border: 1px solid #EAEAEA;
+    box-shadow: none !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.search-box::placeholder {
+    padding-left: 5px;
+}
+
+.search-box:focus {
+    background-color: #f5f5f5;
+    border-color: #00A1D4;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.results-container {
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+    visibility: hidden;
+    font-style: italic;
+}
+
+.readtime {
+    color: #808080;
+    font-style: italic;
+}
+
+/* code box */
+pre code {
+    white-space: pre;
+    font-size: 14px;
+}
+
+/* Cookie button */
+.cookieBtn {
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
+    padding: 1px 10px;
+    text-decoration: none;
+}
+.cookieBtn:hover {
+    color: black;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+.cookieBtn:active {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    word-break: break-word;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.article-card:hover {
+    border-color: #FFB23C;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.20);
+
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.article-card:active {
+    transform: scale(1.04);
+}
+
+.article-card-legend {
+    font-style: italic;
+    border: none;
+    font-size: 15px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+/* Central homepage button */
+.pager-homepage-central {
+    float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .pager-homepage-central {
+        display: none !important;
+    }
+}
+
+/*pager*/
+.previous a {
+    border-color: #EAEAEA !important;
+}
+
+.next a {
+    border-color: #EAEAEA !important;
+}
+
+/*Image author*/
+.img-author {
+    color: #EEE;
+    font-size: 13px;
+    font-style: italic;
+}
