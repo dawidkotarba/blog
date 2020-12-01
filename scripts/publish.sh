@@ -22,10 +22,12 @@ if show_yesno_box "Push to github pages?"; then
     fi
   fi
 
+    git stash
     git checkout gh-pages
     git merge master --no-edit --strategy-option=theirs
     git push --no-verify
     git checkout master
     git push --no-verify
+    git stash apply
 fi
 
