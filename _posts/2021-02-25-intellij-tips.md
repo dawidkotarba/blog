@@ -13,6 +13,9 @@ IntelliJ IDEA is almost like a good game - easy to learn, difficult to master. I
 new fantastic features regularly, it gets even more time to catch up. There are so many posts describing its great features and this is going to be another one.
 Still, maybe you will find something new here that you did not know? Even if I am going to write only about my favourites, it looks like it is a material for an entire post series.
 
+# IntelliJ Editor
+
+
 # Shortcuts
 - quick definition popup: ctrl+shift+I and Ctrl+P dla sygnatury metody
 - ctrl+q dla javadoca
@@ -24,6 +27,7 @@ Still, maybe you will find something new here that you did not know? Even if I a
 - shift shift, ctrl ctrl, ctrl+shift+b, ctrl+b
 - refactor - Ctrl +F5 - change signature, Ctrl+Alt+M/V/F/C/P
 - Alt+Backquote
+- stringi: cyt+w. ctrl+shift+w
 
 # Plugins
 - Checkstyle IDEA
