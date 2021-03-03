@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Yet another time management tips for a happy developer - part 1
+title: Time management tips for a happy developer - part 1
 subtitle: ... and yet another coffee-time for free!
 bigimg: /img/posts/heather-zabriskie-yBzrPGLjMQw-unsplash.jpg
 img-author: Heather Zabriskie
 tags: [productivity, time management]
 comments: true
-published: false
+published: true
 ---
 
-Effective time-management tips and courses are usually pretty popular in the fast-paced world today. I guess we all have
+Effective time management tips and courses are usually pretty popular in the fast-paced world today. I guess we all have
 so many things to do but so little time. I have read and finished a bunch of them and here is the list of my favorite
 tips from a dev point of view. Some of those courses advise how to be productive to do more (and squeeze just one
 another task/activity in between). I strongly advise to do the opposite - be productive to do less and just relax.
@@ -149,7 +149,7 @@ I think my comment is useless here. Anyway, I think the best playlists are in a 
 just instrumental. Our brains are not absorbed by translating/listening to them. A playlist that contains songs we like
 is also useful to prevent skips of tracks - this not only disturbs but also annoys :)
 
-### 19. Invest in good equipment
+### 19. Invest in a good equipment
 
 Having a decent laptop or at least a good mouse and keyboard pays off. Yes, sometimes we are forced to use the machine
 or OS (Windows...)
