@@ -9,6 +9,19 @@ comments: true
 published: false
 ---
 
+Effective time-management tips and courses are usually pretty popular in the fast-paced world today. I guess we all have
+so many things to do but so little time. I have read and finished a bunch of them and here is the list of my favorite
+tips from a dev point of view. Some of those courses advise how to be productive to do more (and squeeze just one
+another task/activity in between). I strongly advise to do the opposite - be productive to do less and just relax.
+
+I will split this post into few parts. Today I will briefly describe:
+- few tips about tasks and activities
+- focus and a flow.
+
+To not waste more time:), here they are. Hope you find something useful.
+
+## General about tasks and activities
+
 ### 1. We are single-core: multi-tasking is evil
 
 Multi-tasking was and probably still is a buzzword met pretty often in job requirements, perceived as an asset of a
@@ -20,7 +33,8 @@ better than trying to "multi-task".
 ### 2. Do the most important thing first thing in the morning
 
 Doing the most important thing right away in the morning will not only ensure that important things are done but will
-give you a great feeling of accomplishment for the rest of the day.
+give you a great feeling of accomplishment for the rest of the day. The worst idea is to do the opposite - complete all
+meaningless stuff and get tired to do the meaningful one.
 
 ### 3. Follow your body
 
@@ -29,15 +43,17 @@ energy and do not waste them as they give you the maximum potential for creative
 are hours/days better suited to more relaxed work. It is better to allocate some easier tasks or non-engaging meetings
 in that time. For example, if you feel empowered in the morning and relaxed in the afternoon, do the hard work early and
 set up meetings after lunch, if possible. If you are a night owl, discuss the action-plan in the morning and get your
-hands dirty later on. The most important is to find your rhythm and follow it.
+hands dirty later on. The most important is to find your rhythm and follow it. Fighting with your body does not make much
+sense.
 
 ### 4. Have a "master" list of tasks
 
-Whatever you have to do, at work or in your personal life, put this into a general TODO list (called also a "master"
-or "perhaps" list) immediately. You can forget them after they get on the list - you are not going to miss them anyway.
-Review the list regularly (daily or weekly) and put things to do into your calendar - now it means you commit to them.
-The beauty of this approach is that it does not only free your mind, but you can be sure that you will never forget to
-do what has to be done. Additionally, some tasks tend to get solved by themselves after some time.
+Whatever you have to do, at work or in your personal life, put this into a general TODO list immediately (I called it
+a "master" list, but over the time it became a "perhaps" list:)). You can forget tasks after they get on the list - you
+are not going to miss them anyway. Review the list regularly (daily or weekly) and put things to do into your calendar -
+now it means you commit to them. The beauty of this approach is that it does not only free your mind, but you can be
+sure that you will never forget to do what has to be done. Additionally, some tasks tend to get solved by themselves
+after some time.
 
 ### 5. Do short tasks right away
 
@@ -54,25 +70,26 @@ resolve by itself, just put it into a todo list or in a calendar in a remote per
 ### 7. Batch similar tasks together
 
 Another good solution for context-switches. Batching similar tasks will allow you to remain in the flow and do things
-quicker and with more pleasure.
+quicker and with more pleasure. And maybe it is also possible to automate them?
 
 ### 8. Put a limit for a task
 
 Agree with yourself to dedicate only some realistic but still a tight timeline for a particular task. This will make you
-focus on what is the most important and prevent trying to make it "perfect".
+focus on what is the most important and prevent trying to make it "perfect", which is actually the worst thing we could
+try to achieve, at least in my opinion.
 
 ### 9. Learn to say "no"
 
 To be performant, we have to say "no" sometimes. It is always good to explain why we cannot handle yet one more "small"
 task and provide an alternative solution (like redirecting to people who can also help). Saying "no" is not always easy
 but probably this is one of the most important things to master. With a proper approach, we can do it tactfully and
-still protect our time.
+still protect our time. Practice makes perfect!
 
 ### 10. Do less - apply Pareto law
 
 Review your tasks or assignments periodically and understand what activities give you the most value. Usually, 20% of
 them are responsible for 80% of outcomes. If something does not contribute heavily to the output, stop doing it without
-any hesitation.
+any hesitation (or at least consider that).
 
 ### 11. Use sharing capabilities of tools
 
@@ -147,38 +164,10 @@ IDEs, languages, even routes to places you visit regularly. It is not only the j
 opportunity to start making things better. The only drawback is that sometimes a migration to a new tool or device can
 be time-consuming. It is still worthy in many cases, though.
 
-Notes:
-
-- one tool for notes at work/personal life
-- a good search is a must
-- spend some time to clear notes
-- put whatever is interesting. Keep / Pocket, OneNote
-
-Meetings:
-
-- agendas, do not attend meetings if not really needed
-- focus on meetings, multitasking is bad
-- leave a buffer between meetings
-- determine your results before the meeting
-
-Automation:
-
-- bash scripts for the rescue, automating
-- templates of messages
-- transferrable configuration
-- know your IDE
-- automatic backups etc.
-- organize your email by automatic rules
-- creating documentation - automatic replies to questions
-
-Other:
-
-- have a kindle with you (two books are good)
-- be imperfect, make it better over time
-- learn something different, experiment
-- turn things into habits
-- learn to do nothing
-- experiment with tools, routes etc.
-- ask questions instead of searching own solution for a longer time
-- audiobooks, 1.5x time or faster
-- master the keyboard and shortcuts
+That's all for today. In the next post I will talk about:
+- working effectively with notes
+- handling meetings
+- automating stuff
+... and few other cool things.
+  
+Thanks!
