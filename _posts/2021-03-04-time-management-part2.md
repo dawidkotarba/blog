@@ -2,46 +2,62 @@
 layout: post
 title: Yet another time management tips for a happy developer - part 2
 subtitle: ... and yet another coffee-time for free!
-bigimg: /img/posts/heather-zabriskie-yBzrPGLjMQw-unsplash.jpg
-img-author: Heather Zabriskie
+bigimg: /img/posts/jon-tyson-FlHdnPO6dlw-unsplash.jpg
+img-author: Jon Tyson
 tags: [productivity, time management]
 comments: true
 published: false
 ---
 
-TODO:
-Notes:
+{: .box-note}**Note:** A first part of this post is available here:
+[Time management tips for a happy developer - part 1](https://dawidkotarba.github.io/blog/2021-03-03-time-management-part1/)
 
-- one tool for notes at work/personal life
-- a good search is a must
-- spend some time to clear notes
-- put whatever is interesting. Keep / Pocket, OneNote
+## Meetings
 
-Meetings:
+### Consider declining some meetings
 
-- agendas, do not attend meetings if not really needed
-- focus on meetings, multitasking is bad
-- leave a buffer between meetings
-- determine your results before the meeting
+### Focus on a meeting - do not multitask
 
-Automation:
+### Leave a buffer between meetings
 
-- bash scripts for the rescue, automating
-- templates of messages
-- transferrable configuration
-- know your IDE
-- automatic backups etc.
-- organize your email by automatic rules
-- creating documentation - automatic replies to questions
+### Have a meeting agenda and end results upfront
 
-Other:
+### Take notes
 
-- have a kindle with you (two books are good)
-- be imperfect, make it better over time
-- learn something different, experiment
-- turn things into habits
-- learn to do nothing
-- experiment with tools, routes etc.
-- ask questions instead of searching own solution for a longer time
-- audiobooks, 1.5x time or faster
-- master the keyboard and shortcuts
+## Notes
+
+### Have an "uber" tool for the work and personal life
+
+### Put all garbage in the notes tool
+
+### Speed and fast search matter
+
+### Labels for the rescue
+
+## Automation
+
+### Email rules
+
+### Bash scripts
+
+### Automate your backups
+
+### Documentation - automate your answers
+
+### Transfer your configuration
+
+### Templating (words and whole messages)
+
+## Other
+
+### Be imperfect (make things better over time)
+
+### Ask questions
+
+### audiobooks, 1.5x time or faster
+
+### master the keyboard and shortcuts
+
+### have a kindle with you (two books are good)
+
+### turn things into habits
