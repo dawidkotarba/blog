@@ -30,7 +30,7 @@ describe('Mobile tests', () => {
         cy.get(aboutMeLinkSelector).should('be.visible');
         cy.get(aboutMeLinkSelector)
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io')
+            .and('contains', 'https://dawidkotarba.eu')
     });
 
     it('About me menu button should navigate to main github page', () => {
@@ -38,7 +38,7 @@ describe('Mobile tests', () => {
         cy.get(blogSelector).should('be.visible');
         cy.get(blogSelector)
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io/blog')
+            .and('contains', 'https://unknownexception.eu')
     });
 
     it('LinkedIn menu button should navigate to LinkedIn profile', () => {

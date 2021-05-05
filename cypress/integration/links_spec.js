@@ -7,13 +7,13 @@ describe('Menu buttons tests', () => {
     it('About me menu button should navigate to homepage site', () => {
         cy.get('#main-navbar > ul > li:nth-child(1) > a')
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io')
+            .and('contains', 'https://dawidkotarba.eu')
     });
 
     it('Blog menu button should navigate to main github page', () => {
         cy.get('#main-navbar > ul > li:nth-child(2) > a')
             .should('have.prop', 'href')
-            .and('contains', 'https://dawidkotarba.github.io/blog')
+            .and('contains', 'https://unknownexception.eu')
     });
 
     it('LinkedIn menu button should navigate to LinkedIn profile', () => {
