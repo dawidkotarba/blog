@@ -2,9 +2,8 @@ describe('Mobile tests', () => {
 
     let menuButtonSlector = 'body > div > nav > div > div.navbar-header > button';
     let aboutMeLinkSelector = '#main-navbar > ul > li:nth-child(1) > a';
-    let blogSelector = '#main-navbar > ul > li:nth-child(2) > a';
-    let linkedInSelector = '#main-navbar > ul > li:nth-child(3) > a';
-    let gitHubSelector = '#main-navbar > ul > li:nth-child(4) > a';
+    let linkedInSelector = '#main-navbar > ul > li:nth-child(2) > a';
+    let gitHubSelector = '#main-navbar > ul > li:nth-child(3) > a';
 
     beforeEach(() => {
         cy.viewport('iphone-6');
@@ -13,14 +12,12 @@ describe('Mobile tests', () => {
 
     it('Menu should toggle on and off', () => {
         cy.get(aboutMeLinkSelector).should('not.be.visible');
-        cy.get(blogSelector).should('not.be.visible');
         cy.get(linkedInSelector).should('not.be.visible');
         cy.get(gitHubSelector).should('not.be.visible');
 
         cy.get(menuButtonSlector).click();
 
         cy.get(aboutMeLinkSelector).should('be.visible');
-        cy.get(blogSelector).should('be.visible');
         cy.get(linkedInSelector).should('be.visible');
         cy.get(gitHubSelector).should('be.visible');
     });
@@ -33,13 +30,6 @@ describe('Mobile tests', () => {
             .and('contains', 'https://dawidkotarba.eu')
     });
 
-    it('About me menu button should navigate to main github page', () => {
-        cy.get(menuButtonSlector).click();
-        cy.get(blogSelector).should('be.visible');
-        cy.get(blogSelector)
-            .should('have.prop', 'href')
-            .and('contains', 'https://unknownexception.eu')
-    });
 
     it('LinkedIn menu button should navigate to LinkedIn profile', () => {
         cy.get(menuButtonSlector).click();

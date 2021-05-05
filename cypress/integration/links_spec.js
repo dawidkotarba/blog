@@ -10,20 +10,14 @@ describe('Menu buttons tests', () => {
             .and('contains', 'https://dawidkotarba.eu')
     });
 
-    it('Blog menu button should navigate to main github page', () => {
-        cy.get('#main-navbar > ul > li:nth-child(2) > a')
-            .should('have.prop', 'href')
-            .and('contains', 'https://unknownexception.eu')
-    });
-
     it('LinkedIn menu button should navigate to LinkedIn profile', () => {
-        cy.get('#main-navbar > ul > li:nth-child(3) > a')
+        cy.get('#main-navbar > ul > li:nth-child(2) > a')
             .should('have.prop', 'href')
             .and('equal', 'https://www.linkedin.com/in/dawid-kotarba-425306a5')
     });
 
     it('GitHub menu button should navigate to GitHub page', () => {
-        cy.get('#main-navbar > ul > li:nth-child(4) > a')
+        cy.get('#main-navbar > ul > li:nth-child(3) > a')
             .should('have.prop', 'href')
             .and('equal', 'https://github.com/dawidkotarba')
     });
