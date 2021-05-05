@@ -10,7 +10,7 @@ describe('Menu buttons tests', () => {
             .and('contains', 'https://dawidkotarba.eu')
     });
 
-    it('Blog menu button should navigate to main github page', () => {
+    it('Blog menu button should navigate to main github page', () => {ele
         cy.get('#main-navbar > ul > li:nth-child(2) > a')
             .should('have.prop', 'href')
             .and('contains', 'https://unknownexception.eu')
