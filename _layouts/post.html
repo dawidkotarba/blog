@@ -13,7 +13,7 @@ layout: base
         {% assign gh_user =  gh_split[0]  %}
         {% assign gh_repo =  gh_split[1]  %}
 
-        <div id="header-gh-btns" data-aos="fade-right" data-aos-duration="1000">
+        <div id="header-gh-btns" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
           {% if page.gh-badge.size > 0 %}
             {% for badge in page.gh-badge %}
               {% case badge %}
@@ -31,12 +31,12 @@ layout: base
         </div>
       {% endif %}
 
-      <article role="main" class="blog-post" data-aos="fade-right" data-aos-duration="1000">
+      <article role="main" class="blog-post" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
         {{ content }}
       </article>
 
       {% if page.tags.size > 0 %}
-        <div class="blog-tags" data-aos="fade-up" data-aos-duration="1000">
+        <div class="blog-tags" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
           Tags:
           {% if site.link-tags %}
           {% for tag in page.tags %}
@@ -52,7 +52,7 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      <ul class="pager blog-pager" data-aos="fade-up" data-aos-duration="1000">
+      <ul class="pager blog-pager" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
         {% if page.previous.url %}
         <li class="previous">
           <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>

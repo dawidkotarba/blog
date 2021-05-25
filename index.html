@@ -7,12 +7,12 @@ use-site-title: true
 ---
 
 <div>
-    <input type="text" id="search-input" placeholder="Find post by title..." class="search-box" data-aos="fade-up"
+    <input type="text" id="search-input" placeholder="Find post by title..." class="search-box" data-aos="fade-up" data-aos-once="true"
            data-aos-duration="1000">
     <ul id="results-container" class="results-container"></ul>
 </div>
 
-<div class="posts-list" data-aos="fade-right" data-aos-duration="1000">
+<div class="posts-list" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
     {% for post in paginator.posts %}
     <div>
         <fieldset class="article-card" onclick='navigateTo("{{ post.url | relative_url }}");'>
