@@ -13,6 +13,11 @@ docker run -d -p 4000:4000 --name blog -v "$PWD":/srv/jekyll blog
 
 or execute "docker_install_run.sh" from "scripts" folder.
 
+To install ruby gems:
+```bash
+bundle install
+```
+
 ### Run/Stop:
 
 #### Option 1) Jekyll:
